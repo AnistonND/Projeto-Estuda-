@@ -46,3 +46,7 @@ O projeto foi desenvolvido com **HTML5, CSS3 e JavaScript puro**, utilizando `lo
 - Recomendações de estudo baseadas na pontuação atual do usuário
 - Incentivos personalizados conforme o progresso
 
+
+Desenvolvido por Aniston – rochaaniston@gmail.com.com
+
+
