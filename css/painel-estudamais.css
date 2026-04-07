@@ -1,0 +1,150 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f5f7fa;
+    margin: 0;
+    color: #333;
+}
+
+.header {
+    background: #4b6cb7;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.btn-logout {
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    padding: 10px 15px;
+    background: #ff4b5c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.container-painel {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Menu lateral de matérias */
+.materias-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-width: 150px;
+}
+
+.materia {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.materia:hover {
+    background: #e0e0e0;
+}
+
+.materia i {
+    font-size: 1.2em;
+}
+
+/* Conteúdo principal */
+.painel-conteudo {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* Cards */
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Botões de ação */
+.btn-acoes {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #4b6cb7;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-acoes:hover {
+    background: #395a9c;
+}
+
+/* Barra de progresso */
+.barra-progresso {
+    background: #e0e0e0;
+    border-radius: 12px;
+    height: 22px;
+    width: 100%;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.barra-fill {
+    background: linear-gradient(90deg, #4b6cb7, #182848);
+    height: 100%;
+    width: 0%;
+    border-radius: 12px;
+    transition: width 0.5s ease-in-out;
+}
+
+/* Ranking */
+.ranking-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ranking-section li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+}
+.desempenho canvas {
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.mensagens ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mensagens li {
+    background: rgba(255,255,255,0.1);
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+}
