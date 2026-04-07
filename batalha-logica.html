@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Batalha da Lógica</title>
+    <link rel="stylesheet" href="css/batalha-logica.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Batalha da Lógica</h1>
+        <button id="voltar" class="btn-voltar">Voltar ao Painel</button>
+    </header>
+
+    <main class="quiz-container">
+        <div id="quizCard" class="quiz-card">
+            <div class="quiz-header">
+                <span id="numeroQuestao">Questão 1</span>
+                <div class="timer"><i class="fas fa-hourglass-half"></i> <span id="timer">15</span>s</div>
+            </div>
+            <h2 id="pergunta">Pergunta aparecerá aqui</h2>
+            <div id="opcoes" class="opcoes"></div>
+            <p id="feedback" class="feedback"></p>
+        </div>
+
+        <div id="resultado" class="quiz-card" style="display:none;">
+            <h2>🎉 Quiz Finalizado!</h2>
+            <p>Pontos ganhos: <span id="pontosGanhos">0</span></p>
+            <button id="btnFinalizar" class="btn-acoes">Voltar ao Painel</button>
+        </div>
+
+        <button id="btnIniciar" class="btn-iniciar">Iniciar Quiz</button>
+    </main>
+
+    <script src="js/batalha-logica.js"></script>
+</body>
+</html>

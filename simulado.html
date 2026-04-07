@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Simulado Estuda+</title>
+    <link rel="stylesheet" href="css/batalha-logica.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>Simulado Estuda+</h1>
+    <button id="voltar" class="btn-voltar">Voltar ao Painel</button>
+</header>
+
+<main class="quiz-container">
+    <div id="quizCard" class="quiz-card">
+        <span id="numeroQuestao"></span>
+        <h2 id="pergunta"></h2>
+        <div id="opcoes" class="opcoes"></div>
+        <p id="explicacao" class="feedback"></p>
+        <button id="btnProxima" class="btn-acoes" style="display:none;">Próxima</button>
+    </div>
+
+    <div id="resultado" class="quiz-card" style="display:none;">
+        <h2>Resultado Final</h2>
+        <p>Você acertou <span id="acertos">0</span> de 15 questões</p>
+        <p>Pontos ganhos: <span id="pontosGanhos">0</span></p>
+        <p id="avaliacao"></p>
+        <p style="margin-top:20px; font-weight:bold;">
+            📢 Amanhã virá mais questões, fique ligado!
+        </p>
+        <button id="btnFinalizar" class="btn-acoes">Voltar ao Painel</button>
+    </div>
+</main>
+
+<script src="js/simulado.js"></script>
+</body>
+</html>

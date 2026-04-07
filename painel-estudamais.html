@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Estuda+ | Painel</title>
+    <link rel="stylesheet" href="css/painel-estudamais.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>Estuda+</h1>
+    <button id="logout" class="btn-logout">Sair</button>
+</header>
+
+<main class="container-painel">
+    <!-- Menu de matérias -->
+    <nav class="materias-menu">
+        <div class="materia"><i class="fas fa-th"></i><span>Todas</span></div>
+        <div class="materia"><i class="fas fa-pencil-alt"></i><span>ENEM</span></div>
+        <div class="materia"><i class="fas fa-square-root-alt"></i><span>Matemática</span></div>
+        <div class="materia"><i class="fas fa-history"></i><span>História</span></div>
+        <div class="materia"><i class="fas fa-globe"></i><span>Geografia</span></div>
+        <div class="materia"><i class="fas fa-leaf"></i><span>Biologia</span></div>
+        <div class="materia"><i class="fas fa-book"></i><span>Português</span></div>
+        <div class="materia"><i class="fas fa-magnet"></i><span>Física</span></div>
+        <div class="materia"><i class="fas fa-flask"></i><span>Química</span></div>
+        <div class="materia"><i class="fas fa-brain"></i><span>Filosofia</span></div>
+        <div class="materia"><i class="fas fa-eye"></i><span>Sociologia</span></div>
+    </nav>
+
+    <div class="painel-conteudo">
+        <!-- Gráfico de Desempenho -->
+<section class="card desempenho">
+    <h3>📊 Seu Desempenho</h3>
+    <canvas id="graficoDesempenho" height="120"></canvas>
+</section>
+
+<!-- Mensagens Inteligentes -->
+<section class="card mensagens">
+    <h3>💬 Recomendações</h3>
+    <ul id="listaMensagens"></ul>
+</section>
+        <!-- Seção de ações -->
+        <section class="acoes card">
+            <button id="btnBatalha" class="btn-acoes">⚔️ Batalha da Lógica</button>
+            <button id="btnSimulado" class="btn-acoes">📝 Simulado</button>
+        </section>
+
+        <!-- Perfil do usuário -->
+        <section class="perfil card">
+            <h2 id="boasVindas">Bem-vindo!</h2>
+            <p>Nível: <span id="nivel">0</span></p>
+            <p>Pontos: <span id="pontos">0</span></p>
+            <div class="barra-progresso">
+                <div id="barraProgresso" class="barra-fill"></div>
+            </div>
+            <p>Medalha: <span id="medalha">🥉 Bronze</span></p>
+        </section>
+
+        <!-- Ranking -->
+        <section class="ranking-section card">
+            <h3>🏆 Melhores Usuários</h3>
+            <ul id="ranking"></ul>
+        </section>
+    </div>
+</main>
+
+<script src="js/painel-estudamais.js"></script>
+</body>
+</html>
